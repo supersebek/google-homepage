@@ -2,11 +2,27 @@
 <html>
     <head>
         <title>Hello Google!</title>
+        <style>
+            .googleSearchBox {
+                background: white;
+                border-radius: 22px;
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+                box-sizing: border-box;
+                cursor: text;
+                font-size: 16px;
+                height: 44px;
+                margin: 0 auto;
+                max-width: 584px;
+                opacity: 1;
+                position: relative;
+                transition: none;
+            }
+        </style>
     </head>
     <body>
         <div>
         <form method="GET" action="www.google.pl">         
-            <input name="googleSearchBox" type="text" style="text-align: center; color: #808080;" size="25"
+            <input id="googleSearchBox" type="text"  
             value="Sebastian Ci to znajdzie :)"/>
             <input type="submit" value="Szukaj" />                       
         </form>
