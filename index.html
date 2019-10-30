@@ -3,7 +3,7 @@
     <head>
         <title>Hello Google!</title>
         <style>
-            .googleSearchBox {
+            #q {
                 background: white;
                 border-radius: 22px;
                 box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
@@ -21,9 +21,9 @@
     </head>
     <body>
         <div>
-        <form method="GET" action="www.google.pl">         
-            <input id="googleSearchBox" type="text"  
-            value="Sebastian Ci to znajdzie :)"/>
+        <form method="GET" action="https://www.google.pl/search">         
+            <input name="q" type="text"  
+            placeholder="Sebastian Ci to znajdzie :)"/>
             <input type="submit" value="Szukaj" />                       
         </form>
     </div>
