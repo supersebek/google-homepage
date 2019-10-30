@@ -3,29 +3,49 @@
     <head>
         <title>Hello Google!</title>
         <style>
+            div.image{
+                margin: 0;   
+                position: absolute;
+                top: 33%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -33%) 
+            }
             div.googleBox {
                 background: white;
-                border-radius: 22px;
-                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
                 box-sizing: border-box;
                 cursor: text;
-                font-size: 16px;
-                height: 44px;
-                margin: 100px auto;
-                max-width: 584px;
-                opacity: 1;
+                height: 10em;
                 position: relative;
-                transition: none;
+                margin: 0;   
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)                
             }
+            footer {                          
+                margin: 0;
+                position: absolute;               
+                top: 100%;                         
+                transform: translate(0, -100%) }
         </style>
     </head>
     <body>
-        <div id="googleBox">
+        <div class="image">
+            <img src="GoogleSeba.jpg">
+        </div>
+        <div class="googleBox">
         <form method="GET" action="https://www.google.pl/search">         
-            <input name="q" type="text"  
-            placeholder="Sebastian Ci to znajdzie :)"/>
-            <input type="submit" value="Szukaj" />                       
+            <input name="q" type="text" size="50"  
+            placeholder="Sebastian will find it :)"/>
+            <input type="submit" value="Go" />  
         </form>
     </div>
+    <footer>
+            <p class="p1">Posted by: Sebastian Straszewski</p>
+            <p class="p2">Contact information: <a href="supersebek@gmail.com">
+            supersebek@gmail.com</a>.</p>
+          </footer>
     </body>
 </html>
