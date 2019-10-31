@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Google!</title>
+        <style>
+            div.image{
+                margin: 0;   
+                position: absolute;
+                top: 33%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -33%) 
+            }
+            div.googleBox {
+                height: 10em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)                
+            }
+            footer {                          
+                margin: 0;
+                position: absolute;               
+                top: 100%;                         
+                transform: translate(0, -100%) }
+        </style>
+    </head>
+    <body>
+        <div class="image">
+            <img src="GoogleSeba.jpg">
+        </div>
+        <div class="googleBox">
+        <form method="GET" action="https://www.google.pl/search">         
+            <input name="q" type="text" size="50" 
+            placeholder="Sebastian will find it :)"/>
+            <input type="submit" value="Go" />  
+        </form>
+    </div>
+    <footer>
+            <p class="p1">Posted by: Sebastian Straszewski</p>
+            <p class="p2">Contact information: <a href="supersebek@gmail.com">
+            supersebek@gmail.com</a>.</p>
+          </footer>
+    </body>
+</html>
